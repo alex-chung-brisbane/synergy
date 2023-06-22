@@ -13,7 +13,7 @@ body:before {
     font-size: 1.5rem;
 }
 
-.input-form > label:not(:first-child), button {
+.input-form > label:not(:first-child), .input-form > button {
     margin-top: 3rem;
 }
 
