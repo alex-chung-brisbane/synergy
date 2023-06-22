@@ -1,0 +1,4 @@
+body:before {
+    /* TODO: Choose a background image. */
+    background-image: url("../resources/backgrounds/option-1.jpg");
+}
