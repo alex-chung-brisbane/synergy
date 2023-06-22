@@ -1,4 +1,35 @@
 body:before {
-    /* TODO: Choose a background image. */
     background-image: url("../resources/backgrounds/option-1.jpg");
+}
+
+.input-form {
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: .5rem;
+    font-size: 1.5rem;
+}
+
+.input-form > label:not(:first-child), button {
+    margin-top: 3rem;
+}
+
+.input-form > input {
+    background: var(--col-secondary);
+    padding: .3rem;
+    border: none;
+    border-bottom: 2px solid var(--col-alternate);
+    font-size: 1.5rem;
+    color: var(--col-accent);
+}
+
+.input-form > button {
+    background: var(--col-alternate);
+    color: var(--col-primary);
+    border: none;
+    font-size: 1.2rem;
+    padding: .3rem 1rem;
 }

@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <!--TODO: Update the "content" attribute to describe site, this is what shows up in Google Search as the brief.-->
-    <meta name="description" content="">
+    <meta name="description" content="Generate passwords quickly and securely. No data stored in the cloud, all created when you need it.">
 
-    <!--TODO: Update the title to the project name.-->
-    <title>Title</title>
+    <title>Synergy</title>
 
     <link rel="shortcut icon" href="./resources/logo_dark_40x40_transparent.png" type="image/x-icon">
 
@@ -44,14 +42,12 @@
         </div>
     </nav>
 
-    <!--TODO: Update the title to the project name.-->
-    <h1 class="page-title">Template</h1>
+    <h1 class="page-title">Synergy</h1>
 
     <div class="tags-wrapper glass-morphic">
         <span class="sr-only">Project skill tags</span>
         <ul class="tags ul-clear">
 
-            <!--TODO: Update these to show skills used in project.-->
             <li>HTML</li>
             <li>CSS</li>
             <li>JS</li>
@@ -61,7 +57,13 @@
 </header>
 
 <section class="main glass-morphic">
-    <!--TODO: Add project code here.-->
+    <fieldset class="input-form">
+        <label for="website">Website/Identifier</label><input type="text" placeholder="Website" name="website" id="website">
+        <label for="master">Master key</label><input type="password" placeholder="Password" name="master" id="master">
+        <button id="generate">Generate</button>
+        <label for="output">Password</label><input type="text" placeholder="Generated key" name="output" id="output">
+        <button id="copy">Copy & clear</button>
+    </fieldset>
 </section>
 
 <footer class="footer-wrapper">
@@ -89,5 +91,8 @@
 </body>
 <footer>
     <script src="./scripts/template.js"></script>
+
+    <script src="./scripts/md5-min.js"></script>
+    <script src="./scripts/index.js"></script>
 </footer>
 </html>
